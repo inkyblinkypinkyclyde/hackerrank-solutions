@@ -14,5 +14,9 @@ function miniMaxSum(arr) {
     console.log(min + " " + max);
 }
 
+function miniMaxSumAlt(arr) {
+    console.log(arr.sort().slice(0, arr.length - 1).reduce((a, b) => a + b, 0) + " " + arr.sort().slice(1, arr.length).reduce((a, b) => a + b, 0));
+}
 
-miniMaxSum(myArray)
+
+miniMaxSumAlt(myArray)
